@@ -4,12 +4,46 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/jquery-3.3.1.js"></script>
 	<script src="../js/popper.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.sopaletras.js"></script>
 	<title>Actividades 3</title>
 </head>
+<script type="text/javascript">
+	$(function(){
+	 var sopaoption = {
+                    vertical: 'S',
+                    onWin: "mostrarTodo"
+                };
+		$("#sopa").SopaLetras(sopaoption);
+		$("#sopa").SopaLetras("enabled");
+	});
+</script>
+<style type="text/css">
+    #sopa table
+    {
+        border: solid 1px #e8eef4;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    #sopa table td
+    {
+        padding: 5px;
+        border: solid 1px #e8eef4;
+    }
+    
+    #sopa table th
+    {
+        padding: 6px 5px;
+        text-align: left;
+        background-color: #e8eef4;
+        border: solid 1px #e8eef4;
+    }
+</style>
 <body>
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
@@ -54,6 +88,33 @@
 	    </div>
 	  </div>
 	</nav>
-	Actividades 3
+	<div class="logo_undad">
+		<img src="../Multimedia/logo_unad.png">
+	</div>
+	<div class="container" id="contenido_site">
+		<div class="Informacion General" align="justify">
+			<center><h1>Actividad 3</h1></center>
+			<center><h3>Sopa Letras</h3></center>
+		</div>
+		<hr>
+		<div class="objetivos">
+			<div class="row">
+				<div class="col-md-8">
+					<div id="sopa">
+					</div>	
+				</div>
+				<div class="col-md-4">
+					<h4>Palabras a encontrar:</h4>
+					<ul class="list-group">
+						<li class="list-group-item"><input type="checkbox" name=""> POO</li>
+						<li class="list-group-item"><input type="checkbox" name=""> LOGICA</li>
+						<li class="list-group-item"><input type="checkbox" name=""> ESTRUCTURADO</li>
+						<li class="list-group-item"><input type="checkbox" name=""> ANALISIS</li>
+						<li class="list-group-item"><input type="checkbox" name=""> REQUERIMIENTOS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
